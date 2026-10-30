@@ -1,8 +1,14 @@
-
 const students = [
-    { id: 1, name: "fatima" },
-    { id: 2, name: "adilya" },
-    { id: 3, name: "sasha" }
+    {id: 1, name: "Adinay"},
+    {id: 2, name: "Tom"},
+    {id: 3, name: "Islam"},
+    {id: 4, name: "Shahzoda"},
+    {id: 5, name: "Adilya"},
+    {id: 6, name: "Fatima"},
+    {id: 7, name: "Malika"},
+    {id: 8, name: "Madina"},
+    {id: 9, name: "Aisuluu"},
+    {id: 10, name: "Nurdana"},
 ];
 
 let totalLetters = 0;
@@ -13,7 +19,7 @@ for (const student of students) {
     const letterCount = student.name.length;
     totalLetters += letterCount;
 
-    console.log(student.name + ": " + letterCount + " букв");
+    console.log(${student.name}: ${letterCount} букв);
 
     if (letterCount > maxLetters) {
         maxLetters = letterCount;
@@ -23,6 +29,6 @@ for (const student of students) {
     }
 }
 
-console.log("Всего букв: " + totalLetters);
-console.log("Максимальная длина имени: " + maxLetters);
-console.log("Самые длинные имена: " + longestNames.join(", "));
+console.log(Всего букв в именах: ${totalLetters});
+console.log(Больше всего букв (${maxLetters}) в имени: ${longestNames.join(", ")});
+
